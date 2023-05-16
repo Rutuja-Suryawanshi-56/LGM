@@ -1,0 +1,69 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <style>
+            div,header{
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 12px;               
+                font-weight: 400;
+                font-size-adjust: inherit;
+            }
+            .PI{
+                text-align: left;
+            }
+            .AI{
+                text-align: center;
+            }
+            .UI{
+                text-align: right;
+            }
+            .CN{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h2>Admission Form</h2>
+        </div>
+        <nav><table>
+            <tr>
+                <a name="PI"> <td><form class="PI">
+                <header><h2><b><u>Personal Information</u></b></h2></header><br>
+                <label>Enter Student Name: <input type="text" placeholder="Enter Your Full Name" required/></label><br><br>
+                <label>Enter Mail id: <input type="email"/></label><br><br>
+                <label for="phone" class="CN">Contact No. :<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /></label><br><br>
+                </form>
+                    <input type="checkbox" required/><label>I agree with all terms & conditions</label><br><br>
+                    <input type="radio" value="Save" name="save"><label>Save</label>
+                    <a href="#AI"><input type="radio" value="Next" name="next"><label>Next</label></a>
+                </td></a>
+                <a name="AI"></a><td><form class="AI">
+                    <header><h2><b><u>Academic Information</u></b></h2></header><br>
+                    <label>SSC Marks:<input type="text"/></label><br><br>
+                    <label>HSC Marks: <input type="number"/></label><br><br>
+                    <label>Current Year of Study:<select><option>BTech First Year</option><option>BTech Second Year</option><option>BTech Third Year</option><option>BTech Final Year</option></select></label><br><br>
+                </form>
+                    <a href="#PI"><input type="radio" value="false" name="true"><label>Previous</label></a>
+                    <a href="#UD"><input type="radio" value="false" name="true"><label>Save & Next</label></a>
+                </td></a>
+                <a name="UD"></a><td><form class="UD">
+                    <header><h2><b><u>Upload Documents</u></b></h2></header><br>
+                    <label>Image:<input type="file" type="jpj"/></label><br><br>
+                    <label>SSC Marksheet:<input type="file"/></label><br><br>
+                    <label>HSC Marksheet: <input type="file"/></label><br><br>
+                </form>
+                    <a href="#AI"><input type="radio" value="false" name="true"/><label>Previous</label></a> 
+                    <input type="radio" value="false" name="true"/><label>Save & Next</label>
+                </td></a>
+            </tr>
+        </table></nav><br><br>
+        <button type="reset">Submit</button>
+        <hr>
+        <h>For more details Contact Here</h>
+        <a type="email"><address type="email">s20_Suryawanshi_Rutuja@Mgmcen.ac.in</address></a>
+        Contact Info<address type="tel">XXXXXXXXX</address>        
+    </body>
+</html>
